@@ -5,16 +5,21 @@ public class Car {
     // DO NOT CALL NON-INSTANTIATED OBJECTS!
     // Otherwise, Null pointer exception will be raised at RUNTIME!
 
-    String type;
+    private String type;
 
     Car()
     {
-        String type = "a";
+        type = "a";
     }
 
-    void printCar()
+    public void printCar()
     {
         System.out.println(type);
+    }
+
+    public void modifyCar(String newType)
+    {
+        this.type = newType;
     }
 }
 
